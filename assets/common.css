@@ -1,0 +1,91 @@
+.container {
+    width: 100%;
+    min-width: 1160px;
+    position: relative;
+    transition: all .5s cubic-bezier(.55, 0, .1, 1);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 30px 0;
+}
+
+.m-panel {
+    padding: 30px;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7) 5%, rgba(255, 255, 255, 0.7) 95%, rgba(255, 255, 255, 0));
+    box-shadow: 0 10px 30px 0 #000;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.hidden {
+    position: absolute;
+    left: -2000px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin: 10px 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    /*css-3*/
+    white-space: -moz-pre-wrap;
+    /*Mozilla,since1999*/
+    white-space: -pre-wrap;
+    /*Opera4-6*/
+    white-space: -o-pre-wrap;
+    /*Opera7*/
+    word-wrap: break-word;
+    /*InternetExplorer5.5+*/
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        width: 100%;
+        min-width: 0;
+        max-width: 640px;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 60px 20px;
+    }
+    .m-panel {
+        width: 100%;
+        min-width: 0;
+        max-width: 640px;
+        padding: 30px;
+        background: linear-gradient(to left bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7) 5%, rgba(255, 255, 255, 0.7) 95%, rgba(255, 255, 255, 0));
+        box-shadow: 0 10px 30px 0 #000;
+        position: relative;
+    }
+    .m-panel img {
+        width: 100%;
+    }
+}
