@@ -30,4 +30,4 @@ router.post("/updateadminsession", (req, res) => {
 module.exports = {
     path: "/api",
     handler: router
-}
+};

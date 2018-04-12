@@ -28,10 +28,6 @@ export default {
         {
           name: "博客",
           path: "/blog"
-        },
-        {
-          name: "电影",
-          path: "/movie"
         }
       ]
     };
